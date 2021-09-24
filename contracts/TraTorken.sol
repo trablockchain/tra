@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract TraToken is ERC20 {
     address public admin;
-    constructor() ERC20('TreToken', 'TRA') {
+    constructor() ERC20('TraToken', 'TRA') {
         _mint(msg.sender, 1000000000 * 10 ** 18);
         admin = msg.sender;
     }
